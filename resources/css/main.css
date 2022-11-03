@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;600&display=swap');
+@font-face {
+	font-family: 'Trajan Pro 3';
+	src: url('../fonts/TrajanPro3Regular.eot');
+	src: local('Trajan Pro 3 Regular'), local('TrajanPro3Regular'),
+			url('../fonts/TrajanPro3Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/TrajanPro3Regular.woff2') format('woff2'),
+			url('../fonts/TrajanPro3Regular.woff') format('woff'),
+			url('../fonts/TrajanPro3Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'ABC';
+	src: url('../fonts/ComforterBrush-Regular.eot');
+	src: local('Trajan Pro 3 Regular'), local('TrajanPro3Regular'),
+			url('../fonts/ComforterBrush-Regular.eot?#iefix') format('embedded-opentype'),
+			url('../fonts/ComforterBrush-Regular.woff2') format('woff2'),
+			url('../fonts/ComforterBrush-Regular.woff') format('woff'),
+			url('../fonts/ComforterBrush-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+body{
+	font-family: 'Noto Sans', sans-serif;
+  background: #fff;
+}
+ul, li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+a{
+    transition: 0.3s;
+}
+a:hover{
+    text-decoration: none;
+}
+:focus{
+    outline: none;
+}
+button:focus{
+    outline: none;
+}
+input{
+    box-shadow: none;
+    border-radius: 0;
+}
+.logo{
+	width: 24rem;
+}
+.utf_section{
+	background: url('../img/header-bg-1.jpg') center top no-repeat;
+	background-size: cover;
+	padding-top: 12rem;
+	padding-bottom: 4rem;
+	text-align: center;
+	color: #fff;
+}
+.utf_section h1{
+	font-family: 'Trajan Pro 3';
+	width: 64rem;
+	margin: 0 auto;
+	margin-top: 7rem;
+	margin-bottom: 9rem;
+	font-weight: 400;
+	font-size: 2.6rem;
+	line-height: 150%;
+}
+.social-networks{
+	display: flex;
+	justify-content: center;
+}
+.social-networks li{
+	margin: 0 1.5rem;
+}
+.social-networks li svg{
+	height: 1.4rem;
+}
+.language-btn{
+	display: flex;
+	justify-content: center;
+	margin-top: 7rem;
+}
+.language-btn li{
+	margin: 0 0.5rem;
+}
+.language-btn li a{
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 100%;
+	text-transform: uppercase;
+	width: 4rem;
+	line-height: 1.6rem;
+	border: 1px solid #FFFFFF;
+	border-radius: 0.6rem;
+	display: inline-block;
+	color: #fff;
+}
+.language-btn li a:hover{
+	background: #999999;
+}
+.footer{
+	padding-top: 6.5rem;
+	padding-bottom: 8rem;
+	background: #EDF7F8;
+}
+.logo-footer{
+	width: 16rem;
+}
+.footer-text{
+	font-weight: 400;
+	font-size: 1rem;
+	line-height: 150%;
+	text-align: center;
+	color: #104567;
+	width: 22rem;
+	margin: 0 auto;
+	margin-top: 2rem;
+}
+.footer h4{
+	font-weight: 600;
+	font-size: 1.7rem;
+	line-height: 100%;
+	text-transform: capitalize;
+	color: #104567;
+	margin-bottom: 2.4rem;
+}
+.footer-menu li a{
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 100%;
+	text-transform: capitalize;
+	color: #555555;
+	margin-bottom: 1.6rem;
+	display: inline-block;
+}
+.footer-socialNetworks-wrap{
+	margin-top: 5rem;
+}
+.footer-socialNetworks-wrap h5{
+	font-weight: 600;
+	font-size: 1.7rem;
+	line-height: 100%;
+	color: #222222;
+	margin-bottom: 1.6rem;
+}
+.footer-socialNetworks{
+	display: flex;
+}
+.footer-socialNetworks li{
+	margin-right: 1.8rem;
+}
+.footer-form{
+	display: flex;
+}
+input{
+	background: #DFF1F0;
+	border-radius: 0.6rem;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 1.5rem;
+	line-height: 100%;
+	color: #777777;
+	padding: 1.4rem 2.2rem;
+	border: 0;
+	width: 100%;
+}
+button[type="submit"]{
+	padding: 1.4rem 2.2rem;
+	background: #104567;
+	border-radius: 0px 0.6rem 0.6rem 0px;
+	border: 0;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 100%;
+	color: #FFFFFF;
+	cursor: pointer;
+}
+.page-bloks{
+	display: flex;
+	justify-content: center;
+	margin-top: 10rem;
+	margin-bottom: 7rem;
+}
+.page-bloks li a{
+	margin: 0 1rem;
+	border: 1px solid #C4C4C4;
+	border-radius: 0.5rem;
+	font-weight: 400;
+	font-size: 1.5rem;
+	line-height: 100%;
+	color: #666666;
+	padding: 1.3rem 1.6rem;
+}
+.page-bloks li a svg{
+	margin: 0 0.8rem;
+}
+.page-bloks li a:hover{
+	background: #999999;
+	color: #fff;
+}
+.page-bloks li a:hover svg path{
+	fill: #fff;
+}
+.news-item_header{
+display:flex;
+}
+.news-item_header div{
+display:flex;
+margin-right: 3rem;
+}
+.news-item_header div svg{
+margin-right: 0.6rem
+}
+.news-item_header div p{
+font-size: 12px;
+line-height: 100%;
+text-transform: capitalize;
+color: #777777;
+}
+.news-item h3{
+font-weight: 600;
+font-size: 1.7rem;
+line-height: 150%;
+color: #104567;
+}
+.news-item p{
+font-style: normal;
+font-weight: 400;
+font-size: 1.4rem;
+line-height: 150%;
+color: #555555;
+}
+.news-item .social-networks{
+margin-top: 1.4rem;
+}
+.news-item .social-networks svg path{
+fill: #999999;
+}
+.news-item_special + hr{
+border: 0;
+border-top: 1px solid #999999;
+width: 16rem;
+height: 0;
+}
+.news-item_name{
+font-size: 1.4rem;
+line-height: 100%;
+text-transform: capitalize;
+color: #777777;
+margin-top: 1.4rem;
+}
+.news-item p.news-item_special{
+font-size: 1.2rem;
+line-height: 100%;
+text-transform: capitalize;
+color: #777777;
+}
+.news-item{
+margin-top: 8rem;
+}
+.news-item p + .social-networks{
+justify-content: end;
+}
+.news-item_foto{
+width: 8rem;
+height: 8rem;
+border-radius: 50%;
+}

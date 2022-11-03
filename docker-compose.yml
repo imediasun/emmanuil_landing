@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  php-fpm:
+    env_file: .env
+    build:
+      context: ./
+      dockerfile: docker/etc/php-fpm/Dockerfile
+    environment:
+      DB_CONNECTION: pgsql
+      DB_HOST: postgres
+      DB_PORT: 5432
+      KAFKA_BROKERS: kafka:9092
+    volumes:
+      - ./:/var/www
+    expose:
+      - 8088
+    ports:
+      - "8088:8088"
+    networks:
+      default:
+        aliases:
+          - ${APP_HOST}
+    working_dir: /var/www
+    command: php artisan serve --host=0.0.0.0 --port=8088
+    depends_on:
+      - postgres
+
+  postgres:
+    image: postgres:14.0
+    restart: always
+    environment:
+      POSTGRES_DB: emmanuil
+      POSTGRES_USER: imediasun
+      POSTGRES_PASSWORD: sunimedia
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgresql:/var/lib/postgresql/data
+      #- ./docker/etc/db:/docker-entrypoint-initdb.d
+networks:
+  default:
+
+volumes:
+  postgresql:
